@@ -1371,3 +1371,15 @@ footer > small {
       url("./hero-dumpster.png") 62% center / cover scroll;
   }
 }
+/* Make large headings easier to read */
+.hero h1,
+.section-intro h2,
+.quote-copy h2,
+.service-area-content h2 {
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 0.92;
+}
+.hero h1 {
+  letter-spacing: -0.02em;
+}
