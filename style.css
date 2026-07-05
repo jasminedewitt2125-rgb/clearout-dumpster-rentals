@@ -1415,6 +1415,7 @@ footer > small {
   border-color: rgba(255, 255, 255, 0.55);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.28);
 }
+
 /* Stronger readable navigation bar */
 .site-header {
   background: rgba(18, 19, 17, 0.92);
