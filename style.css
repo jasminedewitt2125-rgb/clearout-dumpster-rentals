@@ -1236,3 +1236,99 @@ footer > small {
     font-size: clamp(53px, 15vw, 74px);
   }
 }
+/* Transparent navigation over the hero */
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  border-bottom: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.site-header .logo strong {
+  color: #fffaf3;
+}
+
+.site-header .logo small {
+  color: rgba(255, 250, 243, 0.72);
+}
+
+.main-nav a {
+  color: rgba(255, 250, 243, 0.86);
+}
+
+.main-nav a:hover {
+  color: var(--orange);
+}
+
+.main-nav .nav-button {
+  color: #fffaf3;
+  background: rgba(20, 21, 19, 0.28);
+  border: 1px solid var(--orange);
+}
+
+.theme-toggle,
+.menu-button {
+  color: #fffaf3;
+  background: rgba(20, 21, 19, 0.22);
+  border-color: rgba(255, 250, 243, 0.35);
+}
+
+/* Removes the big dark panel behind the text */
+.hero-copy {
+  background: transparent;
+}
+
+/* Softer dark fade only behind the left-side text */
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 11, 10, 0.58) 0%,
+      rgba(10, 11, 10, 0.42) 31%,
+      rgba(10, 11, 10, 0.14) 55%,
+      rgba(10, 11, 10, 0.02) 78%
+    ),
+    url("./hero-dumpster.png") center center / cover fixed;
+}
+
+/* More like the stacked text in your example */
+.hero h1 {
+  max-width: 520px;
+  color: #fffaf3;
+  font-size: clamp(60px, 7vw, 106px);
+  line-height: 0.82;
+  letter-spacing: -0.045em;
+}
+
+.hero h1 span {
+  color: var(--orange);
+}
+
+.hero-text {
+  max-width: 410px;
+  color: rgba(255, 250, 243, 0.9);
+  font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    position: absolute;
+  }
+
+  .main-nav {
+    background: rgba(20, 21, 19, 0.97);
+    border: 1px solid rgba(255, 250, 243, 0.12);
+  }
+
+  .main-nav a {
+    color: #fffaf3;
+  }
+
+  .hero {
+    background-attachment: scroll;
+    background-position: 62% center;
+  }
+}
