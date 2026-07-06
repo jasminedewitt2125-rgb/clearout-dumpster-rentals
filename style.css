@@ -1564,3 +1564,14 @@ footer > small {
 .size-card-large {
   border-top: 4px solid var(--orange) !important;
 }
+
+.size-card-featured {
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+@media (max-width: 760px) {
+  .size-card-featured {
+    margin-left: 0;
+  }
+}
