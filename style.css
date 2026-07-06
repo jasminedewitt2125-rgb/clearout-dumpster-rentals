@@ -2664,3 +2664,12 @@ footer > small {
     padding: 25px 21px;
   }
 }
+
+.projects-items-section .items-intro {
+  max-width: 690px;
+  margin: -12px auto 34px;
+  color: rgba(248, 244, 236, 0.72);
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+}
