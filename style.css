@@ -1659,3 +1659,64 @@ footer > small {
     display: block;
   }
 }
+
+/* Centered hero content */
+.hero-copy {
+  width: 100%;
+  min-height: 760px;
+  padding: 145px 28px 85px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  max-width: 1050px;
+  margin: 0 auto;
+  font-size: clamp(54px, 6.3vw, 96px);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+}
+
+.hero h1 .hero-orange,
+.hero h1 .hero-white {
+  display: block;
+}
+
+.hero h1 .hero-orange {
+  color: #fffaf3;
+}
+
+.hero h1 .hero-white {
+  color: var(--orange);
+  margin-top: 4px;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin: 26px auto 0;
+  text-align: center;
+}
+
+.hero-main-button {
+  align-self: center;
+  margin-top: 29px;
+}
+
+.hero-practical-line {
+  align-self: center;
+  text-align: center;
+}
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 11, 10, 0.76) 0%,
+      rgba(10, 11, 10, 0.67) 35%,
+      rgba(10, 11, 10, 0.58) 55%,
+      rgba(10, 11, 10, 0.34) 76%,
+      rgba(10, 11, 10, 0.16) 100%
+    ),
+    url("./hero-dumpster.png") center center / cover fixed;
+}
