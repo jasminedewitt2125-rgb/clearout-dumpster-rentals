@@ -1532,3 +1532,18 @@ footer > small {
     min-height: auto;
   }
 }
+/* Show the complete dumpster measurement images */
+.size-photo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #20211f;
+}
+
+/* Give every dumpster card the same orange top line */
+.size-card,
+.size-card-small,
+.size-card-featured,
+.size-card-large {
+  border-top: 4px solid var(--orange);
+}
