@@ -2271,3 +2271,202 @@ footer > small {
     padding-bottom: 66px;
   }
 }
+
+/* Combined How It Works + What's Included */
+.rental-process-section {
+  padding: 105px clamp(22px, 8vw, 135px);
+  color: var(--cream);
+  background:
+    linear-gradient(135deg, #191a17, #252621);
+}
+
+.rental-process-heading {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.rental-process-heading .eyebrow {
+  color: var(--orange);
+}
+
+.rental-process-heading h2 {
+  margin: 0;
+  color: var(--cream);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(44px, 5.4vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.rental-process-heading > p:last-child {
+  max-width: 640px;
+  margin: 20px 0 0;
+  color: rgba(248, 244, 236, 0.7);
+  line-height: 1.7;
+}
+
+.rental-process-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.process-timeline {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba(248, 244, 236, 0.2);
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 62px 52px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(248, 244, 236, 0.16);
+}
+
+.process-number {
+  color: var(--orange);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.process-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+}
+
+.process-icon img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.process-step h3 {
+  margin: 0;
+  color: var(--cream);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.process-step p {
+  margin: 9px 0 0;
+  color: rgba(248, 244, 236, 0.67);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.included-panel {
+  padding: 34px;
+  background: rgba(248, 244, 236, 0.06);
+  border: 1px solid rgba(239, 139, 32, 0.42);
+  border-left: 5px solid var(--orange);
+  box-shadow: 0 0 30px rgba(233, 121, 34, 0.14);
+}
+
+.included-kicker {
+  margin: 0 0 12px;
+  color: var(--orange);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.included-panel h3 {
+  margin: 0;
+  color: var(--cream);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.included-panel ul {
+  display: grid;
+  gap: 14px;
+  margin: 29px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.included-panel li {
+  color: rgba(248, 244, 236, 0.84);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.included-panel li::before {
+  margin-right: 10px;
+  color: var(--orange);
+  content: "✓";
+  font-weight: 900;
+}
+
+.included-panel-note {
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(248, 244, 236, 0.16);
+  color: rgba(248, 244, 236, 0.62);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.included-panel-button {
+  display: inline-flex;
+  margin-top: 25px;
+  padding: 13px 17px;
+  color: #1d1e1b;
+  background: var(--orange);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .rental-process-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .rental-process-section {
+    padding: 74px 22px;
+  }
+
+  .process-step {
+    grid-template-columns: 48px 44px 1fr;
+    gap: 13px;
+  }
+
+  .process-number {
+    font-size: 38px;
+  }
+
+  .process-icon,
+  .process-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .process-step h3 {
+    font-size: 25px;
+  }
+
+  .included-panel {
+    padding: 26px 22px;
+  }
+}
