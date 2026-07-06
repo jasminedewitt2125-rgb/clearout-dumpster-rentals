@@ -1933,3 +1933,45 @@ footer > small {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
   }
 }
+
+/* Trust-strip icons */
+.trust-strip div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trust-strip div > img {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  object-fit: contain;
+}
+
+.trust-strip div > span {
+  display: grid;
+  gap: 3px;
+}
+
+.trust-strip strong {
+  display: block;
+}
+
+.trust-strip small {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* How-it-works icons */
+.timeline-icon {
+  overflow: hidden;
+  background: transparent;
+}
+
+.timeline-icon img {
+  width: 42px;
+  height: 42px;
+  display: block;
+  object-fit: contain;
+}
