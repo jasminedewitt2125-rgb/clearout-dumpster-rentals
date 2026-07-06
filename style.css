@@ -1547,3 +1547,20 @@ footer > small {
 .size-card-large {
   border-top: 4px solid var(--orange);
 }
+
+.size-photo,
+.size-photo-10,
+.size-photo-15,
+.size-photo-20 {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #20211f !important;
+}
+
+.size-card,
+.size-card-small,
+.size-card-featured,
+.size-card-large {
+  border-top: 4px solid var(--orange) !important;
+}
