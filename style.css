@@ -1900,3 +1900,36 @@ footer > small {
     align-self: center !important;
   }
 }
+
+/* Make centered hero text easier to read */
+@media (min-width: 701px) {
+  .hero-copy {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .hero-copy::before {
+    position: absolute;
+    z-index: -1;
+    width: min(1120px, 88vw);
+    height: 470px;
+    content: "";
+    background: radial-gradient(
+      ellipse at center,
+      rgba(8, 9, 8, 0.78) 0%,
+      rgba(8, 9, 8, 0.58) 48%,
+      rgba(8, 9, 8, 0.18) 76%,
+      transparent 100%
+    );
+    filter: blur(8px);
+  }
+
+  .hero-title {
+    text-shadow: 0 5px 14px rgba(0, 0, 0, 0.65);
+  }
+
+  .hero-text,
+  .hero-practical-line {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  }
+}
