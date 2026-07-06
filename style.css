@@ -1720,3 +1720,121 @@ footer > small {
     ),
     url("./hero-dumpster.png") center center / cover fixed;
 }
+
+/* Final centered hero layout */
+.hero {
+  min-height: 760px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 11, 10, 0.76) 0%,
+      rgba(10, 11, 10, 0.66) 35%,
+      rgba(10, 11, 10, 0.52) 58%,
+      rgba(10, 11, 10, 0.25) 78%,
+      rgba(10, 11, 10, 0.1) 100%
+    ),
+    url("./hero-dumpster.png") center center / cover fixed;
+}
+
+.hero-copy {
+  width: 100%;
+  min-height: 760px;
+  padding: 145px 28px 85px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+}
+
+.hero-eyebrow {
+  margin-bottom: 22px;
+  color: var(--orange);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: clamp(54px, 6.2vw, 94px);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.hero-title .hero-white {
+  display: block;
+  color: #fffaf3;
+}
+
+.hero-title .hero-orange {
+  display: block;
+  color: var(--orange);
+}
+
+.hero-text {
+  max-width: 650px;
+  margin: 28px auto 0;
+  color: rgba(255, 250, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.hero-main-button {
+  align-self: center;
+  margin-top: 30px;
+  padding: 16px 24px;
+  color: #fffaf3;
+  background: rgba(16, 17, 15, 0.76);
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+}
+
+.hero-practical-line {
+  align-self: center;
+  margin-top: 17px;
+  color: rgba(255, 250, 243, 0.8);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 700px;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(10, 11, 10, 0.9) 0%,
+        rgba(10, 11, 10, 0.74) 55%,
+        rgba(10, 11, 10, 0.42) 100%
+      ),
+      url("./hero-dumpster.png") 62% center / cover scroll;
+  }
+
+  .hero-copy {
+    min-height: 700px;
+    padding: 125px 22px 60px;
+  }
+
+  .hero-title {
+    gap: 9px;
+    font-size: clamp(45px, 12vw, 69px);
+    line-height: 0.93;
+  }
+
+  .hero-text {
+    max-width: 430px;
+    font-size: 16px;
+  }
+
+  .hero-main-button {
+    width: 100%;
+    max-width: 310px;
+  }
+}
