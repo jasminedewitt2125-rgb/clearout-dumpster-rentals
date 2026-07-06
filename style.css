@@ -2524,3 +2524,9 @@ footer > small {
     font-size: 14px;
   }
 }
+
+@media (min-width: 701px) {
+  .process-timeline::before {
+    left: 18px;
+  }
+}
