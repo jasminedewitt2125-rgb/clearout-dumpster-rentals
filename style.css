@@ -429,9 +429,18 @@ button {
 }
 
 .size-photo {
+  height: 270px;
   min-height: 270px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.size-card {
+  height: 100%;
+}
+
+.size-card-content {
+  min-height: 330px;
 }
 
 .size-photo-10 {
