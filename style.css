@@ -1443,6 +1443,7 @@ footer > small {
   border-color: rgba(255, 255, 255, 0.35);
   box-shadow: none;
 }
+
 /* Keep all dumpster cards perfectly even */
 .size-grid {
   align-items: stretch;
