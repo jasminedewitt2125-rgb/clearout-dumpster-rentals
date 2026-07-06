@@ -2470,3 +2470,57 @@ footer > small {
     padding: 26px 22px;
   }
 }
+
+/* Small process-section refinements */
+.included-panel h3 {
+  font-size: 36px;
+}
+
+.process-step p {
+  font-size: 15px;
+}
+
+.process-timeline {
+  position: relative;
+}
+
+.process-timeline::before {
+  position: absolute;
+  top: 38px;
+  bottom: 38px;
+  left: 83px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(233, 121, 34, 0.1),
+    rgba(233, 121, 34, 0.6),
+    rgba(233, 121, 34, 0.1)
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.process-step {
+  position: relative;
+  z-index: 1;
+}
+
+.included-panel-button {
+  min-width: 150px;
+  justify-content: center;
+  padding: 15px 20px;
+}
+
+@media (max-width: 700px) {
+  .process-timeline::before {
+    display: none;
+  }
+
+  .included-panel h3 {
+    font-size: 34px;
+  }
+
+  .process-step p {
+    font-size: 14px;
+  }
+}
