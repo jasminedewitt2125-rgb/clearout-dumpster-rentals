@@ -3688,3 +3688,31 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     font-size: 24px;
   }
 }
+
+/* Desktop quote section: put the form beside the quote text */
+@media (min-width: 701px) {
+  .quote-section {
+    display: grid;
+    grid-template-columns: minmax(360px, 0.85fr) minmax(460px, 1.15fr);
+    gap: 42px;
+    align-items: start;
+  }
+
+  .quote-copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .quote-form {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .quote-steps {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
+}
