@@ -2841,3 +2841,61 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     0 0 22px rgba(233, 121, 34, 0.18),
     inset 0 0 12px rgba(233, 121, 34, 0.03);
 }
+
+/* Improve the light-mode rental process section */
+body:not(.dark-mode) .rental-process-section {
+  background: linear-gradient(135deg, #f3efe7, #e7e0d4);
+}
+
+body:not(.dark-mode) .rental-process-grid {
+  align-items: stretch;
+}
+
+/* Give the timeline side a matching panel */
+body:not(.dark-mode) .process-timeline {
+  padding: 0 28px;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(233, 121, 34, 0.5);
+  border-left: 5px solid var(--orange);
+  box-shadow:
+    0 0 26px rgba(233, 121, 34, 0.12),
+    inset 0 0 18px rgba(233, 121, 34, 0.025);
+}
+
+body:not(.dark-mode) .process-step {
+  border-bottom-color: rgba(32, 33, 31, 0.16);
+}
+
+body:not(.dark-mode) .process-step h3,
+body:not(.dark-mode) .included-panel h3 {
+  color: #20211f;
+}
+
+body:not(.dark-mode) .process-step p {
+  color: #62635d;
+}
+
+/* Make the right box match the left box better */
+body:not(.dark-mode) .included-panel {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(233, 121, 34, 0.5);
+  border-left: 5px solid var(--orange);
+  box-shadow:
+    0 0 26px rgba(233, 121, 34, 0.12),
+    inset 0 0 18px rgba(233, 121, 34, 0.025);
+}
+
+body:not(.dark-mode) .included-panel li {
+  color: #343530;
+}
+
+body:not(.dark-mode) .included-panel-note {
+  color: #686963;
+  border-top-color: rgba(32, 33, 31, 0.16);
+}
+
+@media (max-width: 700px) {
+  body:not(.dark-mode) .process-timeline {
+    padding: 0 18px;
+  }
+}
