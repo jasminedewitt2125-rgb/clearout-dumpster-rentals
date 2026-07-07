@@ -3916,3 +3916,37 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     transform: none !important;
   }
 }
+
+@media (min-width: 701px) {
+  .size-photo,
+  .size-photo-10,
+  .size-photo-15,
+  .size-photo-20 {
+    height: 335px !important;
+    min-height: 335px !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .size-card-large .size-photo {
+    background-position: center center !important;
+  }
+}
+
+@media (min-width: 701px) {
+  .size-card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 335px !important;
+    min-height: 335px !important;
+  }
+
+  .size-card ul {
+    margin-bottom: 18px !important;
+  }
+
+  .size-button {
+    margin-top: auto !important;
+    width: 100% !important;
+  }
+}
