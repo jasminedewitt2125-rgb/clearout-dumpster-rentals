@@ -3884,3 +3884,35 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     margin: 0;
   }
 }
+
+/* Force all three desktop dumpster cards to use the exact same layout */
+@media (min-width: 701px) {
+  .size-card,
+  .size-card-small,
+  .size-card-featured,
+  .size-card-large {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(390px, 0.9fr) !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 335px !important;
+    margin: 0 !important;
+    align-self: stretch !important;
+    grid-column: auto !important;
+  }
+
+  .size-card-content {
+    min-height: 335px !important;
+  }
+
+  .size-photo,
+  .size-card-large .size-photo {
+    height: 335px !important;
+    min-height: 335px !important;
+    width: 100% !important;
+  }
+
+  .size-card-large {
+    transform: none !important;
+  }
+}
