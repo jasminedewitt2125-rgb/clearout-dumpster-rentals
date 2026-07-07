@@ -2816,3 +2816,28 @@ body:not(.dark-mode) .projects-items-section .items-column li {
 body:not(.dark-mode) .projects-items-section .ask-column {
   background: rgba(245, 243, 238, 0.9);
 }
+
+/* Orange outlined project tags */
+.project-tag-grid span {
+  border: 1px solid rgba(233, 121, 34, 0.48) !important;
+  border-left: 3px solid var(--orange) !important;
+  box-shadow:
+    0 0 12px rgba(233, 121, 34, 0.1),
+    inset 0 0 10px rgba(233, 121, 34, 0.02);
+}
+
+/* Orange outlined FAQ boxes */
+.faq-item {
+  border: 1px solid rgba(233, 121, 34, 0.48) !important;
+  border-left: 4px solid var(--orange) !important;
+  box-shadow:
+    0 0 16px rgba(233, 121, 34, 0.1),
+    inset 0 0 10px rgba(233, 121, 34, 0.02);
+}
+
+.faq-item:hover {
+  border-color: rgba(233, 121, 34, 0.78) !important;
+  box-shadow:
+    0 0 22px rgba(233, 121, 34, 0.18),
+    inset 0 0 12px rgba(233, 121, 34, 0.03);
+}
