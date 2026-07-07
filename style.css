@@ -3755,3 +3755,132 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     border-left: 4px solid var(--orange);
   }
 }
+
+/* Mobile hero + trust badge cleanup */
+@media (max-width: 700px) {
+  /* Shorter first screen so the CTA appears sooner */
+  .hero,
+  .hero-copy {
+    min-height: 555px !important;
+  }
+
+  .hero-copy {
+    padding: 92px 22px 34px !important;
+    justify-content: center !important;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 11px !important;
+    font-size: 9px !important;
+    letter-spacing: 0.16em !important;
+  }
+
+  .hero-title,
+  .hero h1 {
+    max-width: 390px;
+    font-size: clamp(39px, 10.5vw, 56px) !important;
+    line-height: 0.94 !important;
+  }
+
+  .hero-text {
+    max-width: 370px;
+    margin-top: 15px !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-main-button {
+    width: 100%;
+    max-width: 315px;
+    min-height: 50px;
+    margin-top: 19px !important;
+  }
+
+  .hero-practical-line {
+    margin-top: 10px !important;
+    font-size: 11px !important;
+  }
+
+  /* Compact swipeable benefit cards */
+  .trust-strip {
+    display: flex !important;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 12px 14px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .trust-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .trust-strip div,
+  .trust-strip div + div {
+    min-width: 222px;
+    min-height: 78px;
+    padding: 12px;
+    border: 1px solid rgba(29, 30, 27, 0.18);
+    border-left: 4px solid #1d1e1b;
+    background: rgba(29, 30, 27, 0.07);
+    scroll-snap-align: start;
+  }
+
+  .trust-strip div > img {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+  }
+
+  .trust-strip strong {
+    font-size: 18px;
+  }
+
+  .trust-strip small {
+    font-size: 11px;
+  }
+
+  /* Keep the sticky buttons from covering forms or footer */
+  body {
+    padding-bottom: 96px !important;
+  }
+
+  footer {
+    padding-bottom: 88px;
+  }
+
+  .mobile-action-bar {
+    min-height: 76px;
+    padding: 10px;
+  }
+
+  .mobile-action-bar a {
+    min-height: 54px;
+    font-size: 13px;
+  }
+
+  .quote-section {
+    padding-bottom: 105px !important;
+  }
+}
+
+/* Clean quote layout after removing the 3 simple steps */
+@media (min-width: 701px) {
+  .quote-section {
+    grid-template-columns: minmax(360px, 0.85fr) minmax(460px, 1.15fr);
+    gap: 42px;
+    align-items: start;
+  }
+
+  .quote-copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .quote-form {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+  }
+}
