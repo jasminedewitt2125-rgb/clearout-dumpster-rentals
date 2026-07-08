@@ -4115,3 +4115,180 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     background-color: #ef8b20; /* Keep the original orange bar on desktop if you prefer */
   }
 }
+
+/* FINAL FIX: dumpster size cards */
+.size-card,
+.size-card-small,
+.size-card-featured,
+.size-card-large {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 20% 60%, rgba(233, 121, 34, 0.1), transparent 34%),
+    #191a17 !important;
+  border: 1px solid rgba(233, 121, 34, 0.55) !important;
+  border-left: 5px solid var(--orange) !important;
+  border-radius: 20px !important;
+  box-shadow:
+    0 0 28px rgba(233, 121, 34, 0.22),
+    inset 0 0 18px rgba(233, 121, 34, 0.035) !important;
+}
+
+/* Image area */
+.size-photo {
+  order: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: calc(100% - 36px) !important;
+  height: 255px !important;
+  min-height: 255px !important;
+  margin: 18px 18px 0 !important;
+  overflow: hidden !important;
+  background: #101110 !important;
+  background-image: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+.size-photo img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.size-photo::after {
+  display: none !important;
+}
+
+/* Text area */
+.size-card-content {
+  order: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 0 !important;
+  padding: 26px 26px 30px !important;
+}
+
+.size-badge {
+  width: fit-content !important;
+  padding: 10px 16px !important;
+  color: #11120f !important;
+  background: var(--orange) !important;
+  border-radius: 9px !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+}
+
+.size-badge::before {
+  content: "− ";
+}
+
+.size-card h3 {
+  margin: 26px 0 16px !important;
+  color: #fffaf3 !important;
+  font-family: "DM Sans", Arial, sans-serif !important;
+  font-size: clamp(34px, 8vw, 50px) !important;
+  font-weight: 800 !important;
+  line-height: 1.16 !important;
+  letter-spacing: -0.04em !important;
+  text-transform: none !important;
+}
+
+.size-card p {
+  color: rgba(255, 250, 243, 0.74) !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+}
+
+.size-card ul {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 14px !important;
+  margin: 26px 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.size-card li {
+  color: rgba(255, 250, 243, 0.88) !important;
+  font-size: 18px !important;
+  line-height: 1.45 !important;
+}
+
+.size-card li::before {
+  display: inline-grid !important;
+  width: 30px !important;
+  height: 30px !important;
+  place-items: center !important;
+  margin-right: 12px !important;
+  color: var(--orange) !important;
+  border: 2px solid var(--orange) !important;
+  border-radius: 50% !important;
+  content: "✓" !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+
+.size-button {
+  display: flex !important;
+  width: 100% !important;
+  min-height: 62px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: auto !important;
+  color: #11120f !important;
+  background: var(--orange) !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  font-size: 17px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+}
+
+.size-button::after {
+  margin-left: 10px;
+  content: "→";
+  font-size: 21px;
+}
+
+/* Mobile-specific sizing */
+@media (max-width: 700px) {
+  .size-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .size-photo {
+    height: 245px !important;
+    min-height: 245px !important;
+    margin: 18px 18px 0 !important;
+    width: calc(100% - 36px) !important;
+  }
+
+  .size-card-content {
+    padding: 26px 26px 30px !important;
+  }
+}
+
+/* Desktop keeps them stacked but not giant */
+@media (min-width: 701px) {
+  .size-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+  }
+
+  .size-photo {
+    height: 245px !important;
+    min-height: 245px !important;
+  }
+
+  .size-card-content {
+    min-height: 390px !important;
+  }
+}
