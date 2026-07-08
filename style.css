@@ -4075,3 +4075,43 @@ body:not(.dark-mode) .projects-items-section .ask-column {
   font-weight: 700;
   /* ... rest of your button styles ... */
 }
+
+/* --- MOBILE ONLY: Horizontal Scroll Benefits --- */
+@media (max-width: 768px) {
+  .trust-strip {
+    background-color: transparent !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 12px !important;
+    padding: 20px 15px !important;
+    scrollbar-width: none;
+  }
+
+  .trust-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .trust-strip > div {
+    flex: 0 0 auto !important;
+    background-color: #ef8b20 !important;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0a0b0a !important;
+  }
+
+  .trust-strip strong { color: #0a0b0a !important; }
+  .trust-strip small { color: #333333 !important; }
+}
+
+/* --- DESKTOP: Keep original layout --- */
+@media (min-width: 769px) {
+  .trust-strip {
+    display: flex; /* Or grid, depending on your preference */
+    justify-content: space-around;
+    background-color: #ef8b20; /* Keep the original orange bar on desktop if you prefer */
+  }
+}
