@@ -4012,3 +4012,19 @@ body:not(.dark-mode) .projects-items-section .ask-column {
 .process-step > div:not(.process-icon) {
   padding-top: 10px !important;
 }
+
+/* Make Quote Section columns equal height and balanced */
+.quote-section {
+  align-items: stretch !important;
+}
+
+.quote-form {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.quote-copy {
+  height: 100% !important;
+}
