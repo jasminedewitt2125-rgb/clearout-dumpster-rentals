@@ -3984,3 +3984,12 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     height: 335px !important;
   }
 }
+
+/* Fix for the How It Works section blocks */
+.rental-process-grid {
+  align-items: stretch !important;
+}
+
+.included-panel {
+  height: 100% !important;
+}
