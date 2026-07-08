@@ -3993,3 +3993,22 @@ body:not(.dark-mode) .projects-items-section .ask-column {
 .included-panel {
   height: 100% !important;
 }
+
+/* 1. Make the two sections in How It Works equal height */
+.rental-process-grid {
+  align-items: stretch !important;
+}
+
+.included-panel {
+  height: 100% !important;
+}
+
+/* 2. Remove the thin orange gradient line next to the numbers */
+.process-timeline::before {
+  display: none !important;
+}
+
+/* 3. Scoot the text down slightly */
+.process-step > div:not(.process-icon) {
+  padding-top: 10px !important;
+}
