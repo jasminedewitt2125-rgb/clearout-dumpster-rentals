@@ -3950,3 +3950,37 @@ body:not(.dark-mode) .projects-items-section .ask-column {
     width: 100% !important;
   }
 }
+
+/* Use real images so all dumpster graphics display evenly */
+@media (min-width: 701px) {
+  .size-photo,
+  .size-photo-10,
+  .size-photo-15,
+  .size-photo-20 {
+    display: flex !important;
+    width: 100% !important;
+    height: 335px !important;
+    min-height: 335px !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #1d1e1b !important;
+    background-image: none !important;
+  }
+
+  .size-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .size-photo::after {
+    display: none !important;
+  }
+
+  .size-card-content {
+    height: 335px !important;
+  }
+}
