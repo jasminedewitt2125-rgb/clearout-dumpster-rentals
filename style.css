@@ -4444,3 +4444,130 @@ body:not(.dark-mode) .approval-card h3 {
     font-size: 15px;
   }
 }
+
+/* Final What Can Go In style */
+.projects-items-section {
+  background: #090b09 !important;
+}
+
+.dumpster-rules-header {
+  max-width: 900px;
+  margin: 78px 0 34px;
+}
+
+.dumpster-rules-header .eyebrow {
+  color: var(--orange);
+}
+
+.dumpster-rules-header h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #fffaf3;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(54px, 6.6vw, 94px);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dumpster-rules-header p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: rgba(255, 250, 243, 0.76);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.dumpster-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.rules-card {
+  padding: 34px 32px;
+  background: rgba(248, 244, 236, 0.035);
+  border-radius: 16px;
+}
+
+.rules-card h3 {
+  margin: 0 0 24px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.rules-card ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rules-card li {
+  color: rgba(255, 250, 243, 0.82);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.rules-card li::before {
+  margin-right: 9px;
+  color: var(--orange);
+  content: "✓";
+  font-weight: 900;
+}
+
+.good-card {
+  border: 1px solid rgba(101, 205, 92, 0.52) !important;
+  box-shadow:
+    0 0 24px rgba(101, 205, 92, 0.12),
+    inset 0 0 18px rgba(101, 205, 92, 0.025);
+}
+
+.good-card h3 {
+  color: #79f06d;
+}
+
+.approval-card {
+  border: 1px solid rgba(233, 121, 34, 0.58) !important;
+  box-shadow:
+    0 0 24px rgba(233, 121, 34, 0.14),
+    inset 0 0 18px rgba(233, 121, 34, 0.025);
+}
+
+.approval-card h3 {
+  color: #ff765f;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .dumpster-rules-header {
+    margin: 58px 0 28px;
+  }
+
+  .dumpster-rules-header h2 {
+    font-size: clamp(44px, 12vw, 64px);
+    line-height: 0.92;
+    letter-spacing: 0.02em;
+  }
+
+  .dumpster-rules-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .rules-card {
+    padding: 28px 22px;
+    border-radius: 14px;
+  }
+
+  .rules-card h3 {
+    font-size: 32px;
+  }
+}
