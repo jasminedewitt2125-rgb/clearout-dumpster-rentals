@@ -4028,3 +4028,50 @@ body:not(.dark-mode) .projects-items-section .ask-column {
 .quote-copy {
   height: 100% !important;
 }
+
+/* --- PREMIUM SIZE CARDS: ADAPTIVE THEMEING --- */
+
+/* Base Styles (Light Mode) */
+.size-card {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff; /* White background for light mode */
+  border: 1px solid rgba(233, 121, 34, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333333; /* Dark text for light mode */
+}
+
+.size-card-content h3 { color: #1a1a1a; }
+.size-card-content p { color: #555555; }
+.size-photo { background: #fdfdfd; border-right: 1px solid rgba(233, 121, 34, 0.1); }
+
+/* Dark Mode Overrides */
+.dark-mode .size-card {
+  background: #1a1a1a;
+  border: 1px solid #e97922;
+  box-shadow: 0 0 15px rgba(233, 121, 34, 0.15);
+  color: #f8f4ec;
+}
+
+.dark-mode .size-card-content h3 { color: #ffffff; }
+.dark-mode .size-card-content p { color: #cccccc; }
+.dark-mode .size-photo { background: #222; border-right: 1px solid rgba(233, 121, 34, 0.2); }
+
+/* Keep these the same for both modes */
+.size-badge {
+  background: #e97922;
+  color: #fff;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.size-card-content a {
+  background: #e97922;
+  color: #fff !important;
+  font-weight: 700;
+  /* ... rest of your button styles ... */
+}
