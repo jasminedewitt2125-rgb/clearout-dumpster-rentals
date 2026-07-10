@@ -1230,3 +1230,133 @@ footer small {
     font-weight: 900;
   }
 }
+
+/* Remove random line beside How It Works numbers */
+.process-timeline::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Fix quote heading text getting cut off */
+.quote-copy h2 {
+  line-height: 1.02 !important;
+  overflow: visible !important;
+  padding-bottom: 6px !important;
+}
+
+.quote-section {
+  overflow: visible !important;
+}
+
+@media (max-width: 700px) {
+  .quote-copy h2 {
+    line-height: 1.05 !important;
+    padding-bottom: 8px !important;
+  }
+}
+
+/* Restore light mode */
+body:not(.dark-mode) {
+  --black: #f6efe4;
+  --charcoal: #fff8ed;
+  --card: #ffffff;
+  --cream: #17140f;
+  --muted: rgba(23, 20, 15, 0.68);
+  --soft: rgba(23, 20, 15, 0.08);
+  --border: rgba(233, 121, 34, 0.28);
+
+  background: #f6efe4 !important;
+  color: #17140f !important;
+}
+
+body:not(.dark-mode) .site-header {
+  background: rgba(255, 248, 237, 0.88) !important;
+  border-bottom: 1px solid rgba(23, 20, 15, 0.1) !important;
+}
+
+body:not(.dark-mode) .main-nav,
+body:not(.dark-mode) .trust-strip,
+body:not(.dark-mode) .size-card,
+body:not(.dark-mode) .included-panel,
+body:not(.dark-mode) .rules-card,
+body:not(.dark-mode) .faq-item,
+body:not(.dark-mode) .quote-form,
+body:not(.dark-mode) footer {
+  background: #fff8ed !important;
+  color: #17140f !important;
+  border-color: rgba(233, 121, 34, 0.28) !important;
+}
+
+body:not(.dark-mode) .hero {
+  background-image:
+    linear-gradient(
+      rgba(246, 239, 228, 0.62),
+      rgba(246, 239, 228, 0.72)
+    ),
+    url("./hero-dumpster.png") !important;
+}
+
+body:not(.dark-mode) .hero-white,
+body:not(.dark-mode) .section-intro h2,
+body:not(.dark-mode) .rental-process-heading h2,
+body:not(.dark-mode) .service-area-content h2,
+body:not(.dark-mode) .quote-copy h2,
+body:not(.dark-mode) .dumpster-rules-header h2,
+body:not(.dark-mode) .size-card h3,
+body:not(.dark-mode) .process-step h3,
+body:not(.dark-mode) .included-panel h3,
+body:not(.dark-mode) .faq-item summary,
+body:not(.dark-mode) .logo-text strong {
+  color: #17140f !important;
+}
+
+body:not(.dark-mode) .hero-orange,
+body:not(.dark-mode) .eyebrow,
+body:not(.dark-mode) .size-badge,
+body:not(.dark-mode) .included-kicker {
+  color: var(--orange) !important;
+}
+
+body:not(.dark-mode) .section-intro p,
+body:not(.dark-mode) .hero-text,
+body:not(.dark-mode) .hero-practical-line,
+body:not(.dark-mode) .size-card p,
+body:not(.dark-mode) .process-step p,
+body:not(.dark-mode) .included-panel-note,
+body:not(.dark-mode) .dumpster-rules-header p:not(.eyebrow),
+body:not(.dark-mode) .faq-item p,
+body:not(.dark-mode) .quote-copy p,
+body:not(.dark-mode) footer p,
+body:not(.dark-mode) footer small {
+  color: rgba(23, 20, 15, 0.68) !important;
+}
+
+body:not(.dark-mode) .projects-items-section,
+body:not(.dark-mode) .rental-process-section,
+body:not(.dark-mode) .sizes-section,
+body:not(.dark-mode) .faq-section,
+body:not(.dark-mode) .quote-section {
+  background: #f6efe4 !important;
+}
+
+body:not(.dark-mode) .service-area-section {
+  background: #fff8ed !important;
+}
+
+body:not(.dark-mode) input,
+body:not(.dark-mode) select,
+body:not(.dark-mode) textarea {
+  background: #ffffff !important;
+  color: #17140f !important;
+  border-color: rgba(23, 20, 15, 0.16) !important;
+}
+
+body:not(.dark-mode) input::placeholder,
+body:not(.dark-mode) textarea::placeholder {
+  color: rgba(23, 20, 15, 0.45) !important;
+}
+
+body:not(.dark-mode) .mobile-action-bar {
+  background: rgba(255, 248, 237, 0.95) !important;
+  border-top: 1px solid rgba(23, 20, 15, 0.12) !important;
+}
