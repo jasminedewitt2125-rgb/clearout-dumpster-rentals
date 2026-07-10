@@ -1360,3 +1360,46 @@ body:not(.dark-mode) .mobile-action-bar {
   background: rgba(255, 248, 237, 0.95) !important;
   border-top: 1px solid rgba(23, 20, 15, 0.12) !important;
 }
+
+/* Force site back to dark mode */
+body,
+body:not(.dark-mode),
+body.dark-mode {
+  --black: #090b09 !important;
+  --charcoal: #11130f !important;
+  --card: #181a16 !important;
+  --cream: #fff7e8 !important;
+  --muted: rgba(255, 247, 232, 0.72) !important;
+  --soft: rgba(255, 247, 232, 0.1) !important;
+  --border: rgba(233, 121, 34, 0.35) !important;
+
+  background: #090b09 !important;
+  color: #fff7e8 !important;
+}
+
+body:not(.dark-mode) .site-header,
+body:not(.dark-mode) .main-nav,
+body:not(.dark-mode) .trust-strip,
+body:not(.dark-mode) .size-card,
+body:not(.dark-mode) .included-panel,
+body:not(.dark-mode) .rules-card,
+body:not(.dark-mode) .faq-item,
+body:not(.dark-mode) .quote-form,
+body:not(.dark-mode) footer {
+  background: #11130f !important;
+  color: #fff7e8 !important;
+}
+
+body:not(.dark-mode) .projects-items-section,
+body:not(.dark-mode) .rental-process-section,
+body:not(.dark-mode) .sizes-section,
+body:not(.dark-mode) .faq-section,
+body:not(.dark-mode) .quote-section {
+  background: #090b09 !important;
+}
+
+body:not(.dark-mode) .hero {
+  background-image:
+    linear-gradient(rgba(9, 11, 9, 0.54), rgba(9, 11, 9, 0.76)),
+    url("./hero-dumpster.png") !important;
+}
